@@ -1237,3 +1237,18 @@ Caused by: org.springframework.web.client.HttpClientErrorException$NotFound: 404
 2026-07-06T19:09:19.618+02:00  INFO 199608 --- [tserver] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
 2026-07-06T19:09:19.630+02:00  INFO 199608 --- [tserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-07-06T19:09:19.639+02:00  INFO 199608 --- [tserver] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-06T19:25:12.096+02:00  INFO 14305 --- [tserver] [main] com.tapp.tserver.TserverApplication      : Starting TserverApplication using Java 25 with PID 14305 (/home/theo/codespace/tapp1/tserver/target/classes started by theo in /home/theo/codespace/tapp1/tserver)
+2026-07-06T19:25:12.099+02:00  INFO 14305 --- [tserver] [main] com.tapp.tserver.TserverApplication      : The following 1 profile is active: "dev"
+2026-07-06T19:25:13.519+02:00  INFO 14305 --- [tserver] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-07-06T19:25:13.535+02:00  INFO 14305 --- [tserver] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-06T19:25:13.535+02:00  INFO 14305 --- [tserver] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-07-06T19:25:13.586+02:00  INFO 14305 --- [tserver] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1425 ms
+2026-07-06T19:25:13.956+02:00  INFO 14305 --- [tserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-06T19:25:14.120+02:00  INFO 14305 --- [tserver] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dce6dd8
+2026-07-06T19:25:14.122+02:00  INFO 14305 --- [tserver] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-06T19:25:14.147+02:00  INFO 14305 --- [tserver] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:1000/postgres (PostgreSQL 18.4)
+2026-07-06T19:25:14.221+02:00  INFO 14305 --- [tserver] [main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.025s)
+2026-07-06T19:25:14.255+02:00  INFO 14305 --- [tserver] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "public": 1
+2026-07-06T19:25:14.261+02:00  INFO 14305 --- [tserver] [main] o.f.core.internal.command.DbMigrate      : Schema "public" is up to date. No migration necessary.
+2026-07-06T19:25:15.022+02:00  INFO 14305 --- [tserver] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-07-06T19:25:15.031+02:00  INFO 14305 --- [tserver] [main] com.tapp.tserver.TserverApplication      : Started TserverApplication in 3.579 seconds (process running for 3.998)
